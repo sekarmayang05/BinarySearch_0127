@@ -1,6 +1,3 @@
- {
-          cout << "\n[✘] Elemen "<< x <<" tidak ditemukan dalam array.\n"; 
+  {
+            cout << "\n[!] Jumlah elemn tidak boleh lebih dari 10. Silahkan coba lagi.\n ";
         }
-        cout << "\nIngin mencari lagi (y\n): ";
-        cin >> ulang;
-    } while (ulang == 'y' || ulang == 'Y');
