@@ -1,9 +1,5 @@
- int mid = (low + high) / 2;
-            if (element[mid] == x)
+ }
+            if (x > element[mid])
             {
-                cout << "\n [✔] Elemen " << x << " ditemukan pada indeks " << mid << ".\n";
-                return;
+                low = mid +1;
             }
-            if (x < element[mid])
-            {
-                high = mid - 1;
