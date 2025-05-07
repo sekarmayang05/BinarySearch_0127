@@ -1,15 +1,13 @@
-void display()
+void binarySearch()
 {
-    cout << "\n=========================================\n";
-    cout << "   Element Array Setelah Diurtkan (Asc)    \n";
-    cout << "\n=========================================\n";
-    for (int j = 0; j < nPanjang; j++)
+    char ulang;
+    do
     {
-        cout << element [j];
-        if (j < nPanjang - 1)
-        {
-            cout << "-->";
-        }
-    }
-    cout << endl;
-}
+        cout << "\n===================================\n";
+        cout << "       Pencarian Binary Search    \n ";
+        cout << "\n===================================\n";
+        cout << "masukkan elemen yang ingin dicari: ";
+        cin >> x;
+
+        int low = 0;
+        int high = nPanjang - 1;
