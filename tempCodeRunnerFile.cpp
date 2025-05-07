@@ -1,9 +1,17 @@
-  cout << "\n=========================\n";
-    cout << "   Masukkan Elemen Array   \n";
-    cout << "\n=========================\n";
-    for (int i = 0; i < nPanjang; i++)
+void bubbleSortArray()
+{
+    int pass = 1;
+    do
     {
-        cout << "Data ke-" << (i + i) << " = ";
-        cin >> element [i];
-    }
+        for(int j = 0; j <= nPanjang - 1 - pass; j++)
+        {
+            if (element [j] > element [j + 1])
+            {
+                int temp = element [j];
+                element[j] = element [j + 1];
+                element [j + 1] = temp;
+            }
+        }
+        pass++;
+    }while (pass <= nPanjang - 1);
 }
